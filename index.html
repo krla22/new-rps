@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Relearning</title>
+</head>
+<body>
+    <h1 class="title">Rock, Paper, Scissors</h1>
+    <div>
+        <div class="showscoresdiv">
+            <div id="playerscore">
+                <p>Player Score: 0</p>
+            </div>
+            <div id="computerscore">
+                <p>Computer Score: 0</p>
+            </div>
+            <div id="drawscore">
+                <p>Draw: 0</p>
+            </div>
+        </div>
+        <div class="showchoicesdiv">
+            <div id="playerdiv">
+                <p>Player Choice:</p>
+                <img src="assets/questionmark.png">
+            </div>
+            <div id="computerdiv">
+                <p>Computer Choice:</p>
+                <img src="assets/questionmark.png">
+            </div>
+        </div>
+    </div>
+    <div class="buttondiv">
+        <div class="choicesdiv">
+            <button onclick="selectRock()">Rock</button>
+            <button onclick="selectPaper()">Paper</button>
+            <button onclick="selectScissors()">Scissors</button>
+            <button onclick="resetGame()">Reset</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
