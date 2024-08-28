@@ -1,7 +1,12 @@
 let computerChoice;
 let playerChoice;
 
-const scores = JSON.parse(localStorage.getItem("storedScore"))
+let scores = JSON.parse(localStorage.getItem("storedScore")) || {
+    playerPoints: 0,
+    computerPoints: 0,
+    drawPoints: 0
+};
+
 
 const choiceComparisons = {
     rock: {loses: 'paper', wins: 'scissors', draw: 'rock'},
